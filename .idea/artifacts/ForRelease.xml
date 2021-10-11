@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ForRelease">
+    <output-path>$PROJECT_DIR$/out/artifacts/ForRelease</output-path>
+    <root id="archive" name="ForRelease.jar" />
+  </artifact>
+</component>
