@@ -6,10 +6,19 @@ plugins {
     `java-library`
     java
 }
-
 group = "com.incetro"
 version = "1.0-SNAPSHOT"
+publishing {
+    publications {
+        create<MavenPublication>("maven") {
+            groupId = "com.incetro"
+            artifactId = "library"
+            version = "0.0.7"
 
+            from(components["java"])
+        }
+    }
+}
 
 repositories {
     mavenCentral()
