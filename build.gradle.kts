@@ -3,8 +3,8 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 plugins {
     kotlin("jvm") version "1.5.31"
     `maven-publish`
+    `java-library`
     java
-    application
 }
 
 group = "com.incetro"
@@ -35,8 +35,4 @@ tasks.wrapper {
 
 tasks.withType<KotlinCompile>() {
     kotlinOptions.jvmTarget = "1.8"
-}
-
-application {
-    mainClass.set("MainKt")
 }
